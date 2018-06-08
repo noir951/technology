@@ -20,15 +20,21 @@ body{
 	font-weight: 100;
 }
 
-.sv_claer{
-	padding:0;
-	margin:0;
-    margin-bottom: 180px;
-}
+                                                            .sv_claer{
+                                                            
+                                                                padding:0;
+                                                                margin:0;
+                                                                margin-bottom: 180px;
+                                                            
+                                                            }
 
-.sv_claer:last-child{
-    margin-top: -90px;
-    margin-bottom: 0;
+
+.footer {
+    padding-bottom: 10px;
+    background: url("../images/header_bg.png");
+    background-size: cover;
+    width: 100%;
+    min-width: 768px;
 }
 
 a, a:hover{
@@ -44,7 +50,7 @@ a, a:hover{
 .sv_header_bg {
 	background: url("../images/header_bg.png");
     background-size: cover;
-	height:160px;
+	height:auto;
 	position: fixed;
 	width: 100%;
 	padding: 20px 0;
@@ -52,33 +58,36 @@ a, a:hover{
 	z-index: 5;
 }
 
+
+
 .sv_phone_left {
 	text-align: left;
 	color: #000000;
 	font-size: 30px;
-	width: 72%;
 }
 
 .sv_phone_left p > span,
 .sv_phone_right p > span{
-	font-size:24px;
+	font-size:28px;
 }
 
 .sv_phone_right {
 	text-align: right;
 	color: #000000;
 	font-size: 30px;
-	width: 72%;
-	float: right;
 }
 
 .sv_phone_left p, .sv_phone_right p {
-	padding-bottom: 10px;
-	width: 83%;
-	padding-top: 15px;
+	padding-top: 25px;
 	font-weight: 300;
-    
-    text-decoration: underline;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.sv_phone_left p {
+    float: left;
+}
+.sv_phone_right p {
+    float: right;
 }
 
 /*-------------------------------------------------*/
@@ -121,9 +130,11 @@ a, a:hover{
 	margin-left: 5px;
 }
 
+
 .navbar {
 	margin-bottom: 0;
 	padding-top: 14px;
+    position: relative;
 }
 
 .nav > li > a {
@@ -378,6 +389,8 @@ a, a:hover{
 	padding: 50px 0;
 }
 
+
+
 #foot_form .form-control {
 	display: block;
 	width: 100%;
@@ -386,7 +399,9 @@ a, a:hover{
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #2b7989;
-	background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+	background-color: rgba(255, 255, 255, 0.7);
 	background-image: none;
 	border: 2px solid #2b7989;
 	border-radius: 0;
@@ -397,22 +412,31 @@ a, a:hover{
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+.form-control::placeholder {
+	color: #2b7989;
+	opacity: 0.6;
+	font-weight: 400;
+	font-style: italic;
+}
+
 .form-control::-moz-placeholder {
 	color: #2b7989;
-	opacity: 1;
-	font-weight: 300;
+	opacity: 0.6;
+	font-weight: 400;
 	font-style: italic;
 }
 
 .btn_submit {
 	background: linear-gradient(180deg, #cccccc 10%, #858585 70%);
-	color: #ffffff;
-	border: 1px solid #ffffff;
+	
+    color: #3d3d3d;
+	border: 1px solid #8a8a8a;
 	text-transform: uppercase;
-	font-weight: 300;
+    font-size: 14px;
+	font-weight: 400;
 	border-radius: 0;
 	height: 40px;
-	width: 200px;
+	width: 100%;
 	box-shadow: 5px 6px 0px 0px rgba(0,0,0,.3);
 	margin: 50px auto;
 }
@@ -423,6 +447,7 @@ a, a:hover{
 
 .btn_submit:hover {
 	box-shadow: 3px 3px 0px 0px rgba(0,0,0,.3);
+    color: #000;
 }
 
 .sv_footer_bg {
@@ -737,6 +762,7 @@ table{
 	text-align:right;
 	text-transform:uppercase;
     margin-bottom: 80px;
+    margin-top: 0px;
 }
 
 .num_big{
@@ -824,16 +850,18 @@ table{
 	margin-left: -200px;
 }
 
+/*
 .sv_otstup{
 	padding-bottom:100px;
 }
+*/
 
 
 
 
 /*------------- ÐœÐ•Ð”Ð˜Ð Ð—ÐÐŸÐ ÐžÐ¡Ð« ----------------*/
 
-/*>1500*/
+/*1500*/
 @media (max-width:1500px){
     .sv_box_ {
         width: 1200px;
@@ -896,17 +924,19 @@ table{
 	    top: 53%;
 	}
 
-	.sv_phone_left p, .sv_phone_right p {
-		padding-top: 12px;
-		width: 53%;
-	}
     
     .sv_box_ {
         width: 992px;
     }
     
+    .sv_claer{
+        margin-bottom: 100px;
+    }
   
-
+       .sv_zag_home{
+    margin-top: 50px;
+}
+    
 .sv_preim_home{
     padding-top: 0;
     
@@ -922,7 +952,7 @@ table{
 
 .zag_preim_home_small {
 	font-size: 40px;
-    line-height: 50px;
+    line-height: 45px;
     text-align: right;
     margin: 0;
 	font-weight: 700;
@@ -945,20 +975,26 @@ table{
 	margin-left: -100px;
 }
 
-.sv_otstup{
-	padding-bottom: 100px;
-} 
+    .btn_submit {
+	margin: 20px auto;
+}
+
 }
 /*sm*/
 @media (max-width: 992px) {
     .navbar-header {
         float: none;
+        position: relative;
     }
     .navbar-left,.navbar-right {
         float: none !important;
     }
     .navbar-toggle {
         display: block;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        z-index: 10;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -987,47 +1023,45 @@ table{
     }
 
     #menu_top{
+        position: absolute;
 		background: #d8d7dc;
 		box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
 		border: 2px solid #ffffff;
 		margin-top: -7px;
 		text-align: center;
 		padding: 20px 0;
-		width: 300px;
-		float: left;
+		width: 100%;
 	}
     
-    .sv_header_bg {
-        height: 80px;
-    }
     
-    .sv_phone_left {
-	text-align: left;
-	font-size: 20px;
-	width: auto;
-}
 
-.sv_phone_left p > span,
-.sv_phone_right p > span{
-	font-size:22px;
-}
+                                            .header-container {
+                                            position: relative;
+                                        }
+                                        .row-nav {
+                                            position: absolute;
+                                            width: 100%;
+                                        }
+    
+    
 
-.sv_phone_right {
-	text-align: right;
-	font-size: 20px;
-	width: auto;
-}
+    .sv_claer{
+        margin-bottom: 70px;
+    }
+ 
+
 
 .sv_phone_left p, .sv_phone_right p {
-	padding-bottom: 0;
-	width: auto;
 	padding-top: 0;
-	font-weight: 300;
 }
     
     .sv_box_ {
         width: 768px;
     }
+    
+        .sv_zag_home{
+            margin-bottom: 0;
+}
     
     .sv_zag_home .num_big {
         font-size: 55px;
@@ -1040,17 +1074,22 @@ table{
     }
     
 .numb_01 {
-        font-size: 80px;
+        font-size: 60px;
 }
+    
+    .sv_preim_home {
+        margin-top: -50px;
+    }
+    
 .zag_preim_home {
-	text-align: left;
-    margin: 0;
+	text-align: right;
+    font-size: 60px;
 }
+    
 
-
-
+    
 .zag_preim_home_small {
-    text-align: left;
+    font-size: 35px;
 }
 .sv_preim_home p {
     padding-left: 0px;
@@ -1058,30 +1097,104 @@ table{
 }
 
 .sv_img_ {
-	margin-left: -45px;
-    margin-right: 45px;
-    margin-top: -50px;
+    margin: 0;
+    margin-left: -70px;
 }
     
+    .img-responsive {
+        width: 300px;
+    }
     
+    
+ 
     
 }
 
-
-
+/*XS*/
 @media (max-width: 768px) {
-	.sv_logo {
-		width: 300px;
-		margin: 0 auto;
-	}
     
     .sv_box_ {
         width: 640px;
     }
     
+    
+    .sv_logo {
+        margin-top: -30px;
+    }
+
+                                                /*
+                                                    .img-responsive {
+                                                        width: 300px;
+                                                        margin: 0 auto;
+                                                    }
+                                                */
+    
+
+    .sv_phone_left,
+    .sv_phone_right {
+        float: right;
+    }
+    .sv_phone_right {
+        margin-top: -30px;
+    }
+    
+    .sv_phone_left,
+    .sv_phone_right,
+    .sv_phone_left p > span,
+    .sv_phone_right p > span {
+        font-size: 16px;
+    }
+
+
+    .sv_phone_left p,
+    .sv_phone_right p {
+        border-bottom: 1px solid;
+    }
+    
+    
+    
+    .sv_img_ {
+    margin-top: -70px;
+    margin-left: -20px;
 }
+    
+    .img-responsive {
+        width: 300px;
+    }
+    
+    .numb_01 {
+        font-size: 50px;
+}
+    
+    .sv_preim_home {
+        margin-top: -80px;
+    }
+    
+    .zag_preim_home {
+	text-align: right;
+    font-size: 45px;
+        line-height: 50px;
+}
+    
 
-
-div {
-    overflow: visible;
+    
+.zag_preim_home_small {
+    font-size: 30px;
+    line-height: 35px;
+}
+.sv_preim_home p {
+    padding-left: 0px;
+    font-size: 20px;
+    line-height: 28px
+    
+}
+    
+    .foot_copy_info {
+        text-align: center;
+    }
+    .phone_foot {
+    }
+    .count_footer {
+        text-align: center;
+    }
 }

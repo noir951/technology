@@ -13,6 +13,7 @@
 
 body{
 	background: url("../images/bg_img_osn.png") no-repeat;
+    background-size: cover;
 	background-attachment: fixed;
 	height:100%;
 	font-family: 'Roboto', sans-serif;
@@ -42,6 +43,7 @@ a, a:hover{
 
 .sv_header_bg {
 	background: url("../images/header_bg.png");
+    background-size: cover;
 	height:160px;
 	position: fixed;
 	width: 100%;
@@ -71,11 +73,12 @@ a, a:hover{
 }
 
 .sv_phone_left p, .sv_phone_right p {
-	border-bottom: 2px solid #000000;
 	padding-bottom: 10px;
 	width: 83%;
 	padding-top: 15px;
 	font-weight: 300;
+    
+    text-decoration: underline;
 }
 
 /*-------------------------------------------------*/
@@ -753,6 +756,7 @@ table{
 .fon_move{
 	background:url("../images/fon_bg_2.png") no-repeat center top;
     background-size: cover;
+    min-width: 768px;
 }
 
 .numb_01 {
@@ -992,6 +996,34 @@ table{
 		width: 300px;
 		float: left;
 	}
+    
+    .sv_header_bg {
+        height: 80px;
+    }
+    
+    .sv_phone_left {
+	text-align: left;
+	font-size: 20px;
+	width: auto;
+}
+
+.sv_phone_left p > span,
+.sv_phone_right p > span{
+	font-size:22px;
+}
+
+.sv_phone_right {
+	text-align: right;
+	font-size: 20px;
+	width: auto;
+}
+
+.sv_phone_left p, .sv_phone_right p {
+	padding-bottom: 0;
+	width: auto;
+	padding-top: 0;
+	font-weight: 300;
+}
     
     .sv_box_ {
         width: 768px;
